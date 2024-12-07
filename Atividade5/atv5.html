@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de Cliques</title>
+</head>
+<body>
+  <h1>Contador de Cliques</h1>
+  <p id="counter">Contagem: 0</p>
+  <button id="incrementButton">Clique aqui</button>
+
+  <script>
+    // Lógica JavaScript para o contador
+    let count = 0;
+
+    const counterElement = document.getElementById('counter');
+    const incrementButton = document.getElementById('incrementButton');
+
+    incrementButton.addEventListener('click', () => {
+      count += 1; // Incrementa o contador
+      counterElement.textContent = `Contagem: ${count}`; // Atualiza o texto do contador
+    });
+  </script>
+</body>
+</html>

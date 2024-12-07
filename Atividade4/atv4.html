@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudar Cor do Texto ao Passar o Mouse</title>
+  <style>
+    /* Estilo geral da página */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    /* Estilo do parágrafo */
+    p {
+      font-size: 24px;
+      color: #333;
+      transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+    }
+
+    /* Alteração de cor quando o mouse passa sobre o parágrafo */
+    p:hover {
+      color: #ff6347; /* Cor que o texto muda ao passar o mouse (tom de vermelho) */
+    }
+  </style>
+</head>
+<body>
+  <!-- Parágrafo com a mensagem -->
+  <p>Passe o mouse sobre este texto para mudar a cor!</p>
+</body>
+</html>
